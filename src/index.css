@@ -1,0 +1,110 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --parchment: #FAFAF7;
+  --parchment-warm: #F5F1EB;
+  --ink: #1A1A1A;
+  --ink-secondary: #4A4A4A;
+  --ink-muted: #8A8A80;
+  --accent: #C45D3E;
+  --accent-hover: #A84D32;
+  --accent-soft: rgba(196, 93, 62, 0.08);
+  --border: #E8E5DE;
+  --border-strong: #D0CBC2;
+
+  --cat-breads: #D4A843;
+  --cat-breads-deep: #8B6914;
+  --cat-breads-bg: #FBF4E4;
+  --cat-mains: #C45D3E;
+  --cat-mains-deep: #8B2500;
+  --cat-mains-bg: #FDF0EC;
+  --cat-breakfast: #E8A83E;
+  --cat-breakfast-deep: #D4782F;
+  --cat-breakfast-bg: #FEF6E8;
+  --cat-basics: #4A7C59;
+  --cat-basics-deep: #2D5016;
+  --cat-basics-bg: #EEF5F0;
+
+  --font-display: 'Playfair Display', Georgia, 'Times New Roman', serif;
+  --font-body: 'Source Serif 4', Georgia, 'Times New Roman', serif;
+  --font-ui: 'Inter', system-ui, -apple-system, sans-serif;
+
+  --content-width: 720px;
+  --page-width: 1080px;
+  --transition-fast: 150ms ease;
+  --transition-med: 300ms ease;
+}
+
+html {
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--ink);
+  background-color: var(--parchment);
+  line-height: 1.7;
+  min-height: 100vh;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  line-height: 1.15;
+  font-weight: 600;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+  color: inherit;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+::selection {
+  background: var(--accent-soft);
+  color: var(--ink);
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border-strong);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--ink-muted);
+}

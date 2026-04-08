@@ -1,0 +1,28 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+  width: 100%;
+}
+
+.site-footer {
+  text-align: center;
+  padding: 56px 24px;
+  border-top: 1px solid var(--border);
+  font-family: var(--font-ui);
+  font-size: 12px;
+  color: var(--ink-muted);
+  letter-spacing: 0.5px;
+}
+
+.site-footer-name {
+  font-family: var(--font-display);
+  font-size: 16px;
+  color: var(--ink);
+  margin-bottom: 8px;
+  font-weight: 600;
+}
